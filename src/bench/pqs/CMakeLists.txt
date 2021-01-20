@@ -15,6 +15,7 @@ set_target_properties(linden PROPERTIES COMPILE_FLAGS
 )
 target_include_directories(linden PUBLIC
     ${CMAKE_SOURCE_DIR}/lib
+    ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/atomic_ops
     ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/include
 )
 
