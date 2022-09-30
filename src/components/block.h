@@ -20,6 +20,7 @@
 #ifndef __BLOCK_H
 #define __BLOCK_H
 
+#include <algorithm>
 #include <atomic>
 #include <cassert>
 #include <utility>

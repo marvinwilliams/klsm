@@ -20,6 +20,7 @@
 #ifndef __BLOCK_STORAGE_H
 #define __BLOCK_STORAGE_H
 
+#include <stdio.h>
 #include <cassert>
 
 #include "block.h"
