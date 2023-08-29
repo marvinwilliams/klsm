@@ -64,7 +64,7 @@ typedef unsigned long slkey_t;
 typedef unsigned long val_t;
 typedef intptr_t level_t;
 #define KEY_MIN                         0
-#define KEY_MAX                         UINT32_MAX
+#define KEY_MAX                         ((unsigned long)-1)
 #define DEFAULT_VAL                     0
 
 typedef ALIGNED(64) struct sl_node
