@@ -28,9 +28,9 @@
 #elif defined(LAPTOP)
 #  define SSALLOC_SIZE (100 * 1024 * 1024)
 #else
-#  define SSALLOC_SIZE (1024 * 1024 * 1024)
+#  define SSALLOC_SIZE (1ULL<< 32)
 #endif
-#define SSALLOC_SIZE_ALL (size_t)((size_t)10 * (size_t)1024 * (size_t)1024 * (size_t)1024)
+/* #define SSALLOC_SIZE_ALL (size_t)((size_t)128 * (size_t)1024 * (size_t)1024 * (size_t)1024) */
 
 /* extern const size_t ssalloc_size_alloc[SSALLOC_NUM_ALLOCATORS]; */
 #define LAPTOP
