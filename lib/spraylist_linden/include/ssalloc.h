@@ -28,7 +28,7 @@
 #elif defined(LAPTOP)
 #  define SSALLOC_SIZE (100 * 1024 * 1024)
 #else
-#  define SSALLOC_SIZE (1ULL<< 32)
+#  define SSALLOC_SIZE (1ULL << 34)
 #endif
 /* #define SSALLOC_SIZE_ALL (size_t)((size_t)128 * (size_t)1024 * (size_t)1024 * (size_t)1024) */
 
