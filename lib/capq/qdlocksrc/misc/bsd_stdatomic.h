@@ -66,12 +66,18 @@
 #endif
 #endif
 
+#if defined(__GNUC__)
+#if __GNUC_PREREQ__(4, 7)
+#define	__GNUC_ATOMICS
+#else
+#error "stdatomic.h requires GCC 4.7 or later"
+#endif
+#else
 #if __has_feature(c_atomic)
 #define	__CLANG_ATOMICS
-#elif __GNUC_PREREQ__(4, 7)
-#define	__GNUC_ATOMICS
-#elif !defined(__GNUC__)
+#else
 #error "stdatomic.h does not support your compiler"
+#endif
 #endif
 
 #if !defined(__CLANG_ATOMICS)

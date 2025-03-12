@@ -1,6 +1,7 @@
 // hierarchical memory priority queue data structure
 #ifndef KNHEAP
 #define KNHEAP
+#include <cstdint>
 #include "util.h"
 
 const int KNBufferSize1 = 32; // equalize procedure call overheads etc.

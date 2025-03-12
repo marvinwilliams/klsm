@@ -21,6 +21,7 @@
 
 #include <limits>
 
+#include <cstdint>
 #include "knheap.h"
 
 namespace kpqbench

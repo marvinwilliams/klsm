@@ -20,6 +20,8 @@
 #ifndef __SPRAYLIST_H
 #define __SPRAYLIST_H
 
+#include <cstdint>
+#include <cstddef>
 #include <iostream>
 
 struct sl_intset;

@@ -18,6 +18,7 @@ target_include_directories(linden PUBLIC
     ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/atomic_ops
     ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/include
 )
+target_compile_definitions(linden PRIVATE -D_GNU_SOURCE)
 
 add_library(sequence_heap STATIC
     ${CMAKE_SOURCE_DIR}/lib/sequence_heap/knheap.C
@@ -56,6 +57,7 @@ target_include_directories(spraylist PUBLIC
     ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/atomic_ops
     ${CMAKE_SOURCE_DIR}/lib/spraylist_linden/include
 )
+target_compile_definitions(spraylist PRIVATE -D_GNU_SOURCE)
 
 add_library(capq STATIC
     ${CMAKE_SOURCE_DIR}/lib/capq/capq.c
